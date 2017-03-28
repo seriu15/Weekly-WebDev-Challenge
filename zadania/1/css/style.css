@@ -11,6 +11,7 @@ body {
 	font-family: "titillium";
 	padding: 0px 15px 50px 15px;
 	margin: 0;
+	padding: 0;
 }
 
 header img {
@@ -140,12 +141,12 @@ form {
 }
 
 .input select {
-	width: 280px;
     color: #999;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
+	box-sizing: content-box;
 }
 
 textarea {
@@ -327,7 +328,7 @@ form button:nth-of-type(2n){
 
 
 
-@media (max-width: 520px){
+@media (max-width: 768px){
 	header img {
 		display: block;
 		margin-left: auto;
@@ -339,7 +340,65 @@ form button:nth-of-type(2n){
 	.container {
 		width: 440px;
 	}
+
+	.logo {
+		margin-bottom: 40px;
+	}
+
+	.logo img {
+		width: 280px;
+	}
 }
 
 
+@media (max-width: 440px) {
+	header img {
+		width: 280px;
+	}
 
+	.container {
+		width: 100%;
+	}
+
+	.col-6 {
+		width: 100%;
+	}
+
+	.input-text {
+		padding-left: 10px;
+	}
+
+	.input input, .input select {
+		padding-left: 10px;
+		margin-left: -10px;
+	}
+
+	.btn-half {
+		width: 100%;
+		float: none;
+	}
+
+	#sign-in {
+		height: 100%;
+	}
+
+	#sign-in button {
+		width: 100%;
+		float: none;
+		margin-top: 20px;
+	}
+
+	form button:nth-of-type(2n) {
+		float: none;
+	}
+
+	.checkbox-box .text {
+		float: none;
+		margin-left: 35px;
+    	margin-top: 3px;
+	}
+
+	.logo img {
+		width: 250px;
+	}
+}
