@@ -311,7 +311,7 @@ form button:nth-of-type(2n){
 
 @media (max-width: 992px){
 	.container {
-		width: auto;
+		width: 550px;
 	}
 
 	.col-6 {
@@ -328,7 +328,17 @@ form button:nth-of-type(2n){
 
 
 @media (max-width: 520px){
+	header img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 320px;
+		height: 100%;
+	}
 
+	.container {
+		width: 440px;
+	}
 }
 
 
