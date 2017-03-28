@@ -1,0 +1,335 @@
+@font-face{
+	font-family: "titillium";
+	src: url('../fonts/TitilliumText22L003.otf');
+}
+
+body {
+	background: url("../images/bg.jpg") no-repeat;
+	background-position: top center;
+	background-size: cover;
+	height: 100%;
+	font-family: "titillium";
+	padding: 0px 15px 50px 15px;
+	margin: 0;
+}
+
+header img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 55px;
+	opacity: 0.3;
+}
+
+.container {
+	margin: 0 auto;
+	width: 940px;
+}
+
+.col-6 {
+	float: left;
+	width: 420px; 
+}
+
+.col-6:nth-of-type(2n){
+	margin-left: 80px;
+}
+
+.form-container {
+	margin: 0 auto;
+}
+
+.form-container h2 {
+	font-size: 32px;
+	color: #FFF;
+	text-shadow: 1px 2px 2px rgba(43, 1, 0, 0.75);
+	text-align: center;
+	padding: 25px;
+	margin: 0;
+}
+
+.form-wrapper {
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.23);
+	height: 100%;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+form {
+	display: block;
+	background: #F4F4F4;
+	height: 100%;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.input {
+	height: 40px;
+	width: 100%;
+	position: relative;
+	border: 1px solid #c6c6c6;
+	border-radius: 4px;
+	margin-bottom: 21px;
+	-webkit-box-shadow: inset 0px -20px 50px -40px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px -20px 50px -40px rgba(0,0,0,0.75);
+	box-shadow: inset 0px -20px 50px -40px rgba(0,0,0,0.75);
+}
+
+.input-icon {
+	float: left;
+	position: relative;
+	padding: 2px 17px;
+	margin-top: 3px;
+}
+
+.input-icon i {
+	color: #dedede;
+	font-size: 28px;
+	padding: 2px;
+	text-align: center;
+}
+.email .input-icon i {
+	margin-left: -4px;
+}
+
+.input-icon:before {
+    content: '';
+    display: block;
+    position: absolute;
+	top: 7%;
+    left: 60px;
+	width: 1px;
+    height: 86%;
+    background-color: #E2E2E2;
+    border-radius: 8px;
+}
+
+.input-text {
+	height: 40px;
+	margin-left: 60px;
+	padding-left: 20px;
+	position: relative;
+}
+
+.input input, .input select {
+	height: 40px;
+	width: 100%;
+	background: none;
+	border: none;
+	font-size: 16px;
+	padding: 0;
+	padding-left: 20px;
+	margin-left: -20px;
+}
+
+.select {
+    position: relative;
+    display: block;
+}
+
+.select:after {
+	content: "\f0dd";
+	font-family: FontAwesome;
+	color: #999;
+	position: absolute; 
+	right: 0; 
+	top: 0;
+	padding: 9px 8px;
+	box-sizing: border-box;  
+    pointer-events: none;
+}
+
+.input select {
+	width: 280px;
+    color: #999;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+}
+
+textarea {
+	font-family: titillium;
+	font-size: 16px;
+	text-align: left;
+	color: #999;
+	width: 100%;
+	height: 200px;
+	border: 1px solid #C6C6C6;
+	border-radius: 4px;
+	background: transparent;
+	box-sizing: border-box;
+	-webkit-box-shadow: inset 0px -20px 50px -40px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px -20px 50px -40px rgba(0,0,0,0.75);
+	box-shadow: inset inset 0px -20px 50px -40px rgba(0,0,0,0.75);
+	padding: 15px;
+	margin-bottom: 21px;
+	overflow: hidden;
+	resize: none;
+}
+
+.checkbox-box {
+	margin-top: -6px;
+}
+
+.checkbox {
+	width: 24px;
+	height: 24px;
+	position: relative;
+	margin: 0 auto;
+	float: left;
+	background: transparent;
+	border: 1px solid #c6c6c6;
+	border-radius: 5px;
+	
+}
+
+.checkbox label {
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	cursor: pointer;
+  	-webkit-transition: opacity 0.35s linear;
+  	-moz-transition: opacity 0.35s linear;
+  	transition: opacity 0.35s linear;
+}
+
+.checkbox input[type=checkbox] {
+	visibility: hidden;
+}
+
+.checkbox input[type=checkbox]:checked + label, .checkbox input[type=checkbox]:hover + label {
+	background-image: url("../images/checked.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.checkbox input[type=checkbox]:hover + label {
+	opacity: 0.3;
+}
+
+.checkbox input[type=checkbox]:checked:hover + label {
+	opacity: 1;
+}
+
+.checkbox-box .text {
+	float: left;
+	margin-left: 20px;
+	margin-top: 3px;
+	color: #999;
+}
+
+.btn {
+	height: 50px;
+	width: 100%;
+	color: #FFF;
+	font-size: 24px;
+	border-radius: 3px;
+	box-shadow: 1px 1px #FFF, inset 1px 1px 1px rgba(255, 255, 255, 0.40);
+	text-shadow: 1px 1px #51850E;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 12px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+.btn-green {
+	border: 1px solid #3B9A00;
+	background-image: linear-gradient(to top, #7FB41F, #A3D840);
+}
+
+.btn-green:hover {
+	background-image: linear-gradient(to top, #7AC922, #9CC745);
+}
+
+.btn-red {
+	border: 1px solid #A2202A;
+	background-image: linear-gradient(to top, #F03848, #F65F71);
+	text-shadow: 1px 1px #850E13;
+}
+
+.btn-red:hover {
+	background-image: linear-gradient(to top, #EB4655, #E04263);
+}
+
+.btn-half {
+	width: 146px;
+	font-size: 18px;
+}
+
+.btn_disabled {
+	cursor: not-allowed;
+	border: 1px solid #96CC75;
+	background-image: linear-gradient(to top, #ADD284, #C6E0A5);
+}
+
+#sign-in {
+	height: 175px;
+}
+
+#sign-in #recovery-form #subscribe-form {
+	padding-top: 30px;
+	padding-bottom: 27px;
+}
+
+#sign-in .checkbox-box {
+	float: left;
+	margin-top: 7px
+}
+
+#sign-in button {
+	width: 136px;
+	float: right;
+	margin-top: 0;
+}
+
+form button:nth-of-type(2n){
+	float: right;
+}
+
+.logo {
+	opacity: 0.2;
+	margin-top: 50px;
+	margin-bottom: 80px;
+}
+
+.logo img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+
+
+
+@media (max-width: 992px){
+	.container {
+		width: auto;
+	}
+
+	.col-6 {
+		float: none;
+		margin: 0 auto;
+	}
+
+	.col-6:nth-of-type(2n){
+		margin-left: 0;
+		margin: 0 auto;
+	}
+}
+
+
+
+@media (max-width: 520px){
+
+}
+
+
+
